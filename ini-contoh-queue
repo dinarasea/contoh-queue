@@ -1,0 +1,36 @@
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main () {
+	queue<int> q;
+	
+	//Enqueue
+	q.push(10);
+	q.push(20);
+	q.push(30);
+	q.push(40);
+	
+	//Menampilkan elemen di depan
+	cout << "Front element: " << q.front() << endl;
+	
+	//Dequeue
+	cout << "Dequeue element: " << q.front() << endl;
+	q.pop();
+	
+	//Menampilkan element setelah dq
+	cout << "Front element after dequeue: " << q.front() << endl;
+	
+	//Menampilkan sisa antrean
+	cout << "Queue elements: ";
+	while (!q.empty())
+	{
+		cout << q.front() << " ";
+		q.pop();
+		}
+		
+		cout << endl;
+		
+		return 0;	
+	
+}
